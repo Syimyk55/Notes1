@@ -67,5 +67,7 @@ class NoteAdapter(val iOnItem: IOnItem): RecyclerView.Adapter<NoteAdapter.ViewHo
         fun delete(pos: Int)
         fun edit(pos: Int)
         fun share(pos: Int)
+        fun getAdapterPos(): Int
+        abstract fun getMovie(): String?
     }
 }
